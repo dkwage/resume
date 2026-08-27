@@ -1,0 +1,138 @@
+%-------------------------
+% Resume in Latex - Minkoo Kang
+% Target: Customer / CRM Data Analyst
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{\vspace{-5pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-1pt}}}}
+
+\newcommand{\resumeEmployment}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeAward}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeCommunity}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+% List Definitions
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeEmploymentListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeEmploymentListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge CRM Data Analyst} \\ \vspace{5pt}
+    \small {Minkoo Kang} $|$ \href{mailto:minkoo.kang@dkwage.com}{minkoo.kang@dkwage.com} $|$
+    \href{https://dkwage.com}{dkwage.com (Portfolio)} $|$
+    (+82) 10-5879-7966
+\end{center}
+
+%-----------SUMMARY-----------------
+\section{Professional Summary}
+\resumeItemListStart
+    \resumeItem{Senior undergraduate student majoring in Data Science and Media Communication, pursuing CRM Data Analyst roles. Experience includes marketing reporting, customer behavior analysis, and transaction data analysis. Built and evaluated customer-base models for repeat-purchase forecasting.}
+\resumeItemListEnd
+
+%-----------RESEARCH-----------------
+\section{Research Experience}
+  \resumeEmploymentListStart
+    \resumeEmployment{Inha University}{Incheon, South Korea}{Undergraduate Research Assistant, Scientific Computation Lab}{2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built a continuous-time Neural Jump ODE for transaction data to estimate purchase intensity, churn risk, and P(alive) for each customer.}
+        \resumeItem{Benchmarked the model against BG/NBD, Pareto/NBD, LSTM, RMTPP, and Neural Jump SDE across five transaction datasets.}
+        \resumeItem{Evaluated forecasts with holdout MAE, customer-targeting capture, churn-identification AUC, ablation tests, and robustness checks.}
+      \resumeItemListEnd
+  \resumeEmploymentListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeEmploymentListStart
+    \resumeEmployment{OOA Inc.}{Incheon, South Korea}{Performance Marketing Intern}{Aug. 2023 -- Dec. 2023}
+\resumeItemListStart
+  \resumeItem{Built a central tracking platform for Meta Ads, Google Ads, and Naver with standardized schemas and validation rules for consistent reporting.}
+  \resumeItem{Used linear regression on channel budget and performance data to forecast ROAS under concentrated-budget scenarios, contributing to a 5.3x increase in campaign ROAS.}
+\resumeItemListEnd
+
+    \resumeEmployment{JSCODE}{Incheon, South Korea}{Brand Marketing Intern}{Feb. 2023 -- May 2023}
+\resumeItemListStart
+  \resumeItem{Analyzed acquisition, funnel, and conversion data from Instagram and YouTube. Consolidated tracking in a single dashboard to reduce reporting discrepancies.}
+  \resumeItem{Used audience insights to revise campaign messaging, contributing to a 4.3x increase in conversion rate over three months.}
+\resumeItemListEnd
+
+  \resumeEmploymentListEnd
+
+%-----------PROJECTS-----------------
+\section{Selected Projects}
+  \resumeSubHeadingListStart
+    \resumeEmployment{Public Media \& Sentiment Analysis Pipeline \href{https://github.com/dkwage/Incheon-Public-Data-Analysis}{\normalfont\normalsize[GitHub]}}{Incheon, South Korea}{Inha University $\times$ Michuhol-gu District Office}{May 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built an automated pipeline to collect, clean, and preprocess engagement metrics and text data from public communication and social media platforms.}
+        \resumeItem{Applied NLP-based sentiment analysis to cross-platform media coverage and provided evidence for public communication strategy.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeEmployment{Inha University}{Incheon, South Korea}{B.A. in Media and Communication \& B.S. in Data Science}{2022 -- 2027 (Expected)}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Customer Data Analysis, Data Science Programming, Statistical Inference, Econometrics}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------------
+%-----------SKILLS-----------------
+\section{Skills \& Languages}
+  \resumeSubHeadingListStart
+    \item \small{\textbf{Data \& Analytics:} SQL, Python (Pandas, Scikit-learn, SciPy), Excel, Google Analytics, Statistical Modeling}
+    \item \small{\textbf{Customer \& CRM Analytics:} Customer Behavior Analysis, Customer Segmentation, Customer-base Models, Repeat-Purchase Forecasting, Transaction Data Analysis, Funnel Analysis}
+    \item \small{\textbf{Data Integration:} APIs \& Data Connectors, Data Cleaning \& Validation, CRM Data Flows, Meta Ads, Google Ads, Naver}
+    \item \small{\textbf{Languages:} Korean (Native), English (Fluent; OPIc IH, TOEIC 940)}
+  \resumeSubHeadingListEnd
+
+\end{document}
