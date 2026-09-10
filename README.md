@@ -51,10 +51,6 @@ removed; path data for the six icons in use came from Font Awesome Free. To add
 one, copy its `viewBox` and `<path d="...">` and reuse the existing
 `class="icon ..."` markup.
 
-## Analytics
-
-Google Analytics `G-S4V94NGWCK` — the same property as dkwage.com, so traffic
-to both is reported together.
 
 ## Deploying
 
